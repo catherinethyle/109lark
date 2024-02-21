@@ -1,0 +1,93 @@
+/* color palette 
+vanilla #E3E7AF
+french gray #B8BACF
+coyote #735F3D
+rasberry rose #B74F6F
+dark purple #381D2A 
+jasmine yellow #FFEA80
+sage green #6A8000
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+/* global styles ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+/* links ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+a {
+}
+
+a:hover {
+    background-color: #B74F6F;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #E3E7AF;
+}
+
+h1 {
+
+}
+
+h2 {
+    
+}
+
+/* button css ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.btn {
+    background: #;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+/* home +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.home {
+    color: #E3E7AF;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: #6A8000;
+}
+
+/* resume +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.resume header::before {
+    background: url(../img/background.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 365px;
+}
+
+/* footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+footer {
+    color: black;
+    background: #FFEA80;
+}
+
+.socials {
+    list-style-type: none; /* get rid of bullet point */
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 16px;
+    height: 16px;
+}
