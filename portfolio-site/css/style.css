@@ -12,6 +12,14 @@ html {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #E3E7AF;
+}
+
 /* global styles ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 *, *:before, *::after {
     box-sizing: inherit;
@@ -26,14 +34,6 @@ a:hover {
     text-decoration: none;
 }
 
-html, body {
-    height: 100%;
-}
-
-body {
-    background: #E3E7AF;
-}
-
 h1 {
 
 }
@@ -44,7 +44,13 @@ h2 {
 
 /* button css ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .btn {
-    background: #;
+    background-color: rgb(231, 124, 190);
+    color:blanchedalmond;
+    border: solid #000000;
+    border-radius: 20px;
+    box-shadow: 4px 4px #000000;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .content-wrapper {
@@ -58,13 +64,26 @@ h2 {
     color: #E3E7AF;
     background: url(../img/background.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
     background: #6A8000;
+    padding: 30px;
 }
 
 /* resume +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
 .resume header::before {
     background: url(../img/background.jpg) center;
     background-size: cover;
@@ -73,21 +92,58 @@ h2 {
     height: 365px;
 }
 
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #B74F6F;
+}
+
+
+.project.item {
+    display: flow-root;
+    /* 30 px spacing to the left and right, 0px spacing above and below */
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
 /* footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 footer {
     color: black;
     background: #FFEA80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .socials {
     list-style-type: none; /* get rid of bullet point */
     padding: 0;
+    margin: 0;
 }
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img {
     width: 16px;
     height: 16px;
+}
+
+.socals img:hover {
+    opacity: 0.5;
 }
