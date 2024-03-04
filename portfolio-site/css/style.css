@@ -10,14 +10,26 @@ sage green #6A8000
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /*set default to 10px*/
 }
 
 html, body {
     height: 100%;
 }
 
+h1, h2, h3 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
 body {
+    font-family: "Noto Sans JP", sans-serif;
+    /* font-size: 15px;  */
     background: #E3E7AF;
+    font-size: 1.5rem; /*15px*/
+    line-height: 1.4;
 }
 
 /* global styles ++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -31,15 +43,21 @@ a {
 
 a:hover {
     background-color: #B74F6F;
+    background-size: cover;
     text-decoration: none;
 }
 
 h1 {
-
+    font-size: /*35px*/ 3.6rem;
+    line-height: 1;
 }
 
 h2 {
-    
+    font-size: /*20px*/ 2.4rem;
+}
+
+h3 {
+    font-size: /*15px*/ 1.5rem;
 }
 
 /* button css ++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -51,12 +69,31 @@ h2 {
     box-shadow: 4px 4px #000000;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
 }
 
+/* header ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .content-wrapper {
     margin: 0 auto;
     padding: 30px;
     max-width: 1000px;
+}
+
+@media screen and (max-width:660px) {
+    .resume header::before {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+    }
 }
 
 /* home +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -77,11 +114,28 @@ h2 {
     padding: 30px;
 }
 
+@media screen and (max-width:550px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+
+    .content.bg {
+        padding: 20px;
+    }
+}
+
 /* resume +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .download-link {
     position: fixed;
     top: 5px;
     left: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1315px) {
+    .download-link {
+        position: absolute;
+    }
 }
 
 .resume header::before {
@@ -97,36 +151,90 @@ h2 {
 }
 
 .resume-section h2 {
-    border-bottom: 2px dashed #B74F6F;
+    border-bottom: 2px dashed rgb(231, 124, 190);
 }
 
-
+/* projects +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .project.item {
-    display: flow-root;
     /* 30 px spacing to the left and right, 0px spacing above and below */
     margin: 30px 0;
 }
 
-.project-item img {
-    width: 300px;
-    float: left;
-    margin-right: 20px;
+.project-item p {
+    margin: 1.2rem;
+    margin-left: 0;
 }
 
+.project-item img {
+    width: 300px;
+}
+
+@media screen and (min-width:910px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:715px) and (max-width:909px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;;
+    }
+
+    .project-item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .project-item img {
+        width: 100%;
+    }
+}
+
+/* work experience ++++++++++++++++++++++++++++++++++++++++++++ */
 .work-item {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 20px;
+    margin: 30px 0;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+@media screen and (min-width:910px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+        margin: 30px 0;
+    }
+
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+/* education +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item p {
+    margin: 0;
 }
 
 /* footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 footer {
     color: black;
     background: #FFEA80;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1rem;
 }
 
 .socials {
@@ -146,4 +254,19 @@ footer {
 
 .socals img:hover {
     opacity: 0.5;
+}
+
+@media screen and (min-width: 550px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:549px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
