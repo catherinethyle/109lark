@@ -1,0 +1,256 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ 
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ html,
+ body {
+    height: 100%;
+ }
+ 
+ 
+ body {
+     font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+ }
+ 
+header {
+    padding-bottom: 45px;
+    background-color: #9fc1f0;
+    text-align: center;
+    color: white;
+    border-bottom: solid #000000;
+}
+
+h1 {
+    padding: 25px;
+    background-color: #9fc1f0;
+    text-align: center;
+    color: black;
+    font-size: 4.4rem;
+}
+
+h2 {
+    padding: 25px;
+    background-color: #9fc1f0;
+    text-align: center;
+    color: white;
+    border: solid #000000;
+}
+
+main {
+    width: 500px;
+    margin: 50px auto;
+    padding-bottom: 100px;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+p {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.page {
+    background-color: antiquewhite;
+    height: auto;
+    border-bottom: solid #000000;
+    border-left: solid #000000;
+    border-right: solid #000000;
+    border-top: solid #000000;
+    margin: 15px auto;
+}
+
+.page p:first-child {
+    padding-top: 25px;
+}
+
+.btn {
+    display: inline-flexbox;
+    height: auto;
+    background-color: #5B91CF;
+    border: solid #000000;
+    border-radius: 20px;
+    box-shadow: 4px 4px #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.debrief {
+    width: 50%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    color: #000000;
+    padding-right: 40px;
+}
+
+.btn p:last-child {
+    padding-bottom: 25px;
+}
+
+.btn-img {
+    height: auto;
+    background-color: #9fc1f0;
+    border: solid #000000;
+    border-radius: 20px;
+    box-shadow: 4px 4px #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.img-div {
+    display: inline-block;
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#paragraphOne {
+    position: relative;
+}
+
+#img-annotation-1 {
+    position: absolute;
+    top: 535px;
+    left: 110px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#paragraphTwo {
+    position: relative;
+}
+
+#img-annotation-2 {
+    position: absolute;
+    top: 750px; 
+    left: 1000px;
+    margin-left: 0;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphThree {
+    position: relative;
+}
+
+#img-annotation-3 {
+    position: absolute;
+    top: 1215px;
+    left: 225px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphFour {
+    position: relative;
+}
+
+#img-annotation-4 {
+    position: absolute;
+    top: 1435px;
+    left: 1000px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphFive {
+    position: relative;
+}
+
+#img-annotation-5 {
+    position: absolute;
+    top: 1525px;
+    left: 140px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphSix {
+    position: relative;
+}
+
+#img-annotation-6 {
+    position: absolute;
+    top: 1650px;
+    left: 1025px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphEight {
+    position: relative;
+}
+
+#img-annotation-7 {
+    position: absolute;
+    top: 2110px;
+    left: 1010px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#img-annotation-8 {
+    position: absolute;
+    top: 2150px;
+    left: 310px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphNine {
+    position: relative;
+}
+
+#img-annotation-9 {
+    position: absolute;
+    top: 2350px;
+    left: 1015px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#img-annotation-9half {
+    position: absolute;
+    top: 2480px;
+    left: 1150px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+#paragraphNineteen {
+    position: relative;
+}
+
+#img-annotation-10 {
+    position: absolute;
+    top: 3295px;
+    left: 150px;
+    max-width: fit-content;
+    padding: 10px 10px 10px 10px;
+}
+
+.links {
+    margin-top: 45px;
+    text-align: center;
+}
