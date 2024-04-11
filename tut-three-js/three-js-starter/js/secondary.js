@@ -5,22 +5,29 @@ import * as THREE from 'three';
 import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
 
+// declare variables
 let scene, camera, renderer, octahedron, capsule;
 
+// initialize variables and their characteristics
 function init(){
+    // create the base scene for your THREE.js model
     scene = new THREE.Scene();
 
-    const lightRight = new THREE.DirectionalLight(0xffffff, 3);
-    lightRight.position.set(1, 1, 5);
+    // directional light 
+    const lightRight = new THREE.DirectionalLight(0xffffff, 3); //(hex code color, intensity of light)
+    lightRight.position.set(1, 1, 5); // set (x, y, z) position
     scene.add(lightRight);
 
-    const helper = new THREE.DirectionalLightHelper( lightRight, 5 );
+    // to visualize where your light is hitting
+    const helper = new THREE.DirectionalLightHelper( lightRight, 5 ); // (name of directional light, scale of helper)
     scene.add( helper );
 
+    // secondary directional light
     const lightLeft = new THREE.DirectionalLight(0xfff0f0, 3);
     lightLeft.position.set(-1, 1, 5);
     scene.add(lightLeft);
 
+    // camera to view the scene
     camera = new THREE.PerspectiveCamera(
         75, //set field of view
         window.innerWidth / window.innerHeight, //set aspect ratio
@@ -28,6 +35,7 @@ function init(){
         1000 //set camera for far plane
     );
 
+    
     renderer = new THREE.WebGLRenderer({antialias: true});
 
     renderer.setSize(window.innerWidth, window.innerHeight);
