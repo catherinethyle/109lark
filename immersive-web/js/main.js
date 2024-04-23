@@ -26,7 +26,7 @@ function init(){
     );
 
     const bedTextureLoader = new THREE.TextureLoader();
-    bedTexture = bedTextureLoader.load('./assets/bed.png');
+    bedTexture = bedTextureLoader.load('./assets/bed.PNG');
 
     const bedMaterial = new THREE.MeshBasicMaterial({ map: bedTexture, transparent: true});
 
@@ -36,7 +36,7 @@ function init(){
     scene.add(bedMesh);
 
     const shelfTextureLoader = new THREE.TextureLoader();
-    shelfTexture = shelfTextureLoader.load('./assets/shelf.png');
+    shelfTexture = shelfTextureLoader.load('./assets/shelf.PNG');
 
     const shelfMaterial = new THREE.MeshBasicMaterial({ map: shelfTexture, transparent: true});
 
