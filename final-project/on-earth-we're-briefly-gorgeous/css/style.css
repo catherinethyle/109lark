@@ -38,7 +38,9 @@ h1 {
     text-align: center;
     color: black;
     font-size: 75px;
-    ;
+    padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 5px;
 }
 
 h2 {
@@ -46,6 +48,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 45px;
+    margin: 5px;
 }
 
 h3 {
@@ -64,4 +67,16 @@ button {
     font-family: "Monofett", monospace;
     font-size: 20px;
     margin: 5px;
+}
+
+.page {
+    background-image: url(../img/grid-paper.png);
+    background-size:contain ;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#excerpt-one-p5 {
+    margin: 0 auto;
 }
