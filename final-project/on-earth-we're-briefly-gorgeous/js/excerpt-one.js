@@ -1,7 +1,7 @@
 let canvas;
 
 function setup(){
-    canvas = createCanvas(, );
+    canvas = createCanvas();
     canvas.parent("excerpt-one-p5");
 }
 
