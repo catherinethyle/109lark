@@ -16,19 +16,29 @@
     font-style: normal;
 }
 
+.reenie-beanie-regular {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 a {
     text-decoration: none;
     color: black;
   }
   
   a:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
+    
   }
 
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../img/grid-background.png");
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -37,13 +47,21 @@ h1 {
     font-style: normal;
     text-align: center;
     color: black;
-    font-size: 55px;
-    padding: 0px;
+    background-color: rgb(255, 235, 134);
+    width: 25%;
+    font-size: 45px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 2px solid black;
 }
 
-#book-title-animation {
-    animation: titleGrowShrink 12s infinite;
-    animation-delay: 1.5s;
+#thumbnail-img {
+    animation: titleGrowShrink 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+#book-title {
+    width: 55%;
 }
 
 @keyframes titleGrowShrink {
@@ -63,25 +81,52 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 45px;
+    margin: 0 auto;
+    padding: 5px 0;
     margin-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    background-color: rgb(255, 235, 134);
+    width: 5%;
+    text-align: center;
 }
 
 h3 {
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 15px;
+    margin-top: 0;
 }
+
+main {
+}
+
+#catherines-book-nook {
+    width: 37%;
+}
+
 #catherines-book-nook:hover {
     animation: elementGrow 0.75s ease-in-out; /* Add a smooth transition effect */
 }
 
 .nav-element:hover {
     animation: elementGrow 0.75s ease-in-out; /* Add a smooth transition effect */
+}
+
+.images {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    animation: elementGrow 1.5s ease-in-out infinite; /* Add a smooth transition effect */
 }
 
 @keyframes elementGrow {
@@ -96,21 +141,74 @@ nav {
     }
 }
 
+p {
+    font-size: 18px;
+}
+
 button {
     border-radius: 15px;
     border: solid 5px black;
+    background-color: rgb(160, 206, 252);
     font-family: "Monofett", monospace;
     font-size: 20px;
     margin: 5px;
 }
 
-.page {
-    max-width: 75vw;
-    margin: 0 auto;
-    text-align: center;
+.btn {
+    animation: fontChanger 10s infinite ease-in-out;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(12, 67, 205);
+    border: solid 5px  rgb(12, 67, 205);
 }
 
-#excerpt-one-p5 {
-    margin: 0 auto;
+@keyframes fontChanger {
+    0% {
+        font-family: "Monofett", monospace;
+    }
+
+    50% {
+        font-family: "Reenie Beanie", cursive;
+    }
+    100% {
+        font-family: "Micro 5 Charted", sans-serif;
+    }
 }
+
+.grid-template {
+    display: grid;
+    grid-template-columns:  30% 40% 30%;
+    margin: 15px 0;
+    width: 99%;
+    position: relative;
+}
+
+.grid-item {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 5px 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+    height:fit-content;
+    z-index: 0;
+}
+
+.empty-item {
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+
+}
+
+.grid-photo-left {
+    text-align: right;
+    z-index: 1;
+}
+
+.grid-photo-right {
+    text-align: left;
+    z-index: 1;
+}
+
 
