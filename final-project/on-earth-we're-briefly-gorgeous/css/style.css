@@ -211,4 +211,14 @@ button {
     z-index: 1;
 }
 
+.links {
+    text-align: center;
+    background-color: rgb(12, 67, 205);
+    font-family: "Micro 5 Charted", sans-serif;
+    width: 35%;
+    font-size: 22px;
+    margin: 15px auto;
+    padding: 5px;
+    color: white;
+}
 
