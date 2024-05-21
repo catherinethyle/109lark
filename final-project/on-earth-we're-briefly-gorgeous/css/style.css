@@ -39,6 +39,7 @@ body {
     background-image: url("../img/grid-background.png");
     background-size: 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -107,6 +108,10 @@ nav {
 }
 
 main {
+}
+
+p {
+    font-size: 12px;
 }
 
 #catherines-book-nook {
